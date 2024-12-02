@@ -1,0 +1,149 @@
+*{
+    margin: 0; // margem
+    padding: 0; //preenchimento
+    box-sizing: border-box; // aceita as medidas que eu colocar no meu código
+}
+
+header{
+    height: 20vh; // viewport-hight, altura da janela, a % é para largura e vh é mais para altura
+    background-color: #d9d9d9;
+    display: flex;
+
+    justify-content: flex-start; // É o padrão. Os itens são postos o começo do eixo x (horizontal)
+    justify-content: flex-end; // Os itens são postos no final do eixo x.
+    justify-content: center; //  Centraliza os itens no eixo x.
+
+    justify-content: space-evenly; // O mesmo espaçamento entre os icones.
+    justify-content: space-around; // Espaçamento ao redor.
+    justify-content: space-between; // O primeiro e o utimo ficm encostados nas laterias e s demis tem o mesmo espaçamento entre si.
+
+    align-items: center; // os ´tens são alinhados  no meio do eixo y
+}
+
+// nav é o pai da ul
+nav{
+    
+    width: 60%; // baseado na janela e não na caixa pai.
+    width: 50vw; // viewport, sempre será baseada no tamanho da janela de exibição.
+}
+
+ul{
+     //border=borda, solid=tipo da borda, blue=cor da borda.
+    display: flex;
+    justify-content: space-evenly;
+
+
+    //list style, estilo de lista
+    list-style: none; // remover a marcação da lista
+}
+
+li{
+    font-size: 24px; // tamanho da fonte
+    font-size: 2rem;// 16*2= 32. É baseado na medida do elemento raiz, caso especificamos a medida, caso não, ele é baseado em 16px.
+    font-size: 2em; // 16*2=32. É baseado na medida da caixa pai, caso especificamos a medida, caso não, ele é baseado em 16px.
+   
+
+    // text trsnform, transformção de texto, captalize, 
+    text-transform: capitalize; // primeira letra de cada palavra fica maiúscula
+    text-decoration: lowercase; // tudo fica minuscúlo
+    text-decoration: uppercase; // tudo fica maúsculo
+}
+
+// text decoration é usado paradefinir a frmatação de underline, overline e none
+a{
+    text-decoration: none; // sem decoração
+     // linha abaixo
+     // linha acima
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerHistoria{
+    
+    width: 40%;
+    height: 100vh;
+    display: flex ;
+    flex-direction:row; // Linha, é comportamento padrão
+    flex-direction: row-reverse; // Linha, só que reversa
+    flex-direction: column-reverse; //Coluna ao contrário
+    flex-direction: column; // Coluna
+    justify-content: space-evenly;
+    align-items: center;
+
+    img{
+        width: 50%;
+    }
+
+    h2{
+        font-size: 32px; //fixa
+        font-size: 2em; // flexivel
+        font-size: 2rem;//flexivel
+        font-weight: 100; // 100 a 90, contando o 100
+        font-weight: bold;
+        font-weight: lighter;
+    }
+
+    p{
+        width: 88%;
+        font-size: 1.5rem; // como se fosse 24px+ 16+8
+        text-align: center;
+    }
+}
+
+.containerLogistica{
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    img{
+        width: 50%;
+    }
+
+
+    h2{
+        font-size: 32px; //fixa
+        font-size: 2em; // flexivel
+        font-size: 2rem;//flexivel
+        font-weight: 100; // 100 a 90, contando o 100
+        font-weight: bold;
+        font-weight: lighter;
+    }
+
+    p{
+        font-size: 1.5rem;
+        width: 60%;
+        font-size: 24px;
+        font-size: 1.5rem;
+        text-align: center;
+
+
+    }
+ button{
+    background-color: #d9d9d9;
+    font-size: 2rem;
+    width: 13;
+    height: 7vh;
+    font-weight: 700;
+    border-radius: 20px 20px 20px 20px; // 1° Esquerda superior, 2º Direita superior, 3 direita inferior, 4 esquerda inferior
+ }
+}
+
+ footer{
+    height: 10vh;
+    background-color:#001C43;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    p{
+        font-size: 1.25rem;
+        color: white;
+    }
+
+ }
